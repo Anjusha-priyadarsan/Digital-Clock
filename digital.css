@@ -1,0 +1,57 @@
+@font-face {
+    font-family: digital;
+    src: url(./fonts/Digital\ Dismay.otf);
+}
+
+
+.clock{
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 100%;
+    font-size: 200px;
+    font-family: digital;
+    background: linear-gradient(135deg,#f32170, #743ad5,#eedd44,#cf23cf);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    margin-top: 200px;
+    margin-left: 100px;
+    padding: 20px;
+    
+    
+    }
+
+body{
+    background-color: black;
+}
+.border-gradient{
+    border: 10px solid;
+    border-image-slice: 1;
+    border-width: 15px;
+    border-image-source:linear-gradient(135deg,#f32170, #743ad5,#eedd44,#cf23cf) ;
+    animation: animate 1.55s linear infinite;
+
+}
+@keyframes animate {
+    100%{
+        filter: hue-rotate(360deg);
+    }
+    
+}
+@media (width <= 740px) {
+    .clock{
+       
+        font-size: 80px;
+        margin-left:5px;
+        margin-right:5px;
+    
+    
+    }
+    .border-gradient{
+       
+        border-width: 7px;
+        
+    }
+}
