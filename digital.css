@@ -1,6 +1,6 @@
 @font-face {
     font-family: digital;
-    src: url(./fonts/Digital\ Dismay.otf);
+    src: url(./fonts/TickingTimebombBB.ttf);
 }
 
 
@@ -43,7 +43,7 @@ body{
 @media (width <= 740px) {
     .clock{
        
-        font-size: 80px;
+        font-size: 50px;
         margin-left:5px;
         margin-right:5px;
     
